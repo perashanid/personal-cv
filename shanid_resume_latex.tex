@@ -1,0 +1,88 @@
+
+\documentclass[a4paper,10pt]{article} % Changed to 10pt for the entire document
+
+% Packages
+\usepackage{url}
+\usepackage{parskip}     
+\usepackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}                
+\usepackage{fontawesome5}
+\usepackage[unicode, draft=false]{hyperref}
+
+% Define Section Format
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\begin{document}
+\pagestyle{empty} 
+
+% Title
+\begin{tabularx}{\linewidth}{@{} l r @{}}
+\huge{Shanid Sajjatuz Islam} & \href{tel:+8801970475003}{\raisebox{-0.05\height}\faMobile \ +8801970475003} \\
+\\[10pt] % Reduced vertical space between name and GitHub link
+\href{https://github.com/perashanid}{\raisebox{-0.05\height}\faGithub\ perashanid} & \href{mailto:shanidsajjatuz@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ shanidsajjatuz@gmail.com} \\
+\\[8pt] % Reduced vertical space between GitHub and Email
+\href{https://linkedin.com/in/shanid-sajjatuz-16154726b}{\raisebox{-0.05\height}\faLinkedin\ shanid-sajjatuz-16154726b} & \href{https://portfolio-v1-eta-eight.vercel.app/}{\raisebox{-0.05\height}\faGlobe \ portfolio-v1-eta-eight.vercel.app} \\
+\end{tabularx}
+
+% Education
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l r@{}}    
+\textbf{Bachelor of Science in Computer Science} & 2023 - 2027 \\
+\textbf{BRAC University}, Dhaka, Bangladesh & \hfill (Expected Aug 2027) \\
+\end{tabularx}
+
+% Technical Skills
+\section{Technical Skills}
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Programming Languages & JavaScript (ES6+), TypeScript, Python, Basic Java, C++ \\
+Frameworks & React, Tailwind CSS, Express, Node.js, PyTorch, TensorFlow \\
+Databases & MongoDB, SQL \\
+Tools & Git, GitHub, Vite, npm, VS Code, Cursor \\
+AI & Accelerated development using AI tools and prompt engineering techniques \\
+Project Management Tools & Jira, Trello, Asana \\
+Documentation & Experience in writing and maintaining project documentation \\
+Languages & Fluent in English, Bengali \\
+\end{tabularx}
+
+% Projects
+\section{Projects}
+\small
+\begin{tabularx}{\linewidth}{@{}l r@{}}
+\textbf{Survease Application} & \\[3.75pt]
+Built a survey platform with login/signup and data validation. & Integrated Node/Express backend with MongoDB.  \\
+\textbf{Face Attendance System} & \\[3.75pt]
+Built a real-time face recognition attendance system. & Integrated MySQL for reliable storage. \\
+\textbf{Binary Text Detection} & \\[3.75pt]
+Developed tool for identifying binary text data. & Used TensorFlow and Pytesseract for accurate extraction. \\
+\textbf{Diabetes Prediction Model} & \\[3.75pt]
+Designed model using health indicator data. & Achieved high accuracy with TensorFlow and decision trees. \\
+\textbf{Personal Portfolio Website} & \\[3.75pt]
+Built a multi-page portfolio using React and Tailwind CSS. & Utilized React Router and reusable components. \\
+\textbf{Product Management Web App (MERN)} & \\[3.75pt]
+Developed a full-stack product management app with MERN. & Implemented JWT authentication and RESTful APIs. \\
+\end{tabularx}
+
+% Research
+\section{Research}
+\textbf{Media Bias Detection using Machine Learning and Deep Learning} \\
+This research focuses on identifying media bias through search algorithms, leveraging various machine learning (ML) and deep learning (DL) techniques. By analyzing news articles and media content, the model aims to detect biases in reporting based on factors such as language usage, sentiment analysis, and content alignment with political or ideological views. Using Natural Language Processing (NLP), Convolutional Neural Networks (CNNs), and Recurrent Neural Networks (RNNs), this study explores the effect...
+
+% Extracurricular
+\section{Extracurricular}
+\textbf{General Member, BRAC University Computer Club (R\&D Department)} \\
+Collaborate with peers to explore emerging technologies and contribute to research and development projects. Refine leadership and communication skills through workshops and team projects.
+
+% Interests
+\section{Interests}
+Learning new technologies and applying them in real-world projects.
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}

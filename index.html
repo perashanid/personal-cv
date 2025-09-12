@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanid's CV</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #1a1a1a;
+            font-family: "Courier New", monospace;
+            overflow: hidden;
+            background-image: linear-gradient(45deg, #1a1a1a 25%, #242424 25%, #242424 50%, #1a1a1a 50%, #1a1a1a 75%, #242424 75%, #242424 100%);
+            background-size: 40px 40px;
+        }
+        .container {
+            max-width: 1200px;
+            width: 95%;
+            margin: 10px auto;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 0;
+            box-shadow: 0 0 20px rgba(255,255,255,0.1);
+            position: relative;
+            height: calc(100vh - 20px);
+            border: 2px solid #333;
+        }
+        .download-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background-color: #000;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: bold;
+            font-family: "Courier New", monospace;
+            box-shadow: 4px 4px 0 rgba(255,255,255,0.2);
+            transition: all 0.2s ease;
+            z-index: 1000;
+            border: 2px solid #fff;
+        }
+        .download-button:hover {
+            background-color: #fff;
+            color: #000;
+            box-shadow: 2px 2px 0 rgba(255,255,255,0.2);
+            transform: translate(2px, 2px);
+        }
+        .pdf-container {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="Shanid__Resume.pdf" download class="download-button">Download PDF</a>
+        <iframe 
+            src="Shanid__Resume.pdf" 
+            class="pdf-container"
+            type="application/pdf">
+        </iframe>
+    </div>
+</body>
+</html>
