@@ -1,4 +1,3 @@
-
 \documentclass[a4paper,11pt]{article}
 
 % Packages for formatting and layout
@@ -22,7 +21,7 @@
 % Use bold font and coloured headings for sections
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}
 % Tighten vertical spacing for section headings to conserve space
-\titlespacing*{\section}{0pt}{1.0ex}{0.3ex}
+\titlespacing*{\section}{0pt}{1.5ex}{0.5ex}
 
 % Reduce line height for tabular environments
 \renewcommand{\arraystretch}{0.9}
@@ -32,6 +31,9 @@
 
 % A helper command to reduce bullet indentation in lists
 \setlist[itemize]{leftmargin=1.5em, noitemsep, topsep=0pt}
+
+% Add extra space between sections
+\newcommand{\sectionspace}{\vspace{1.5em}} % Add space between sections
 
 \begin{document}
 
@@ -44,12 +46,12 @@
   {\Large\bfseries Shanid Sajjatuz Islam}\\[4pt]
   {\small
   \faEnvelope\ \href{mailto:shanidsajjatuz@gmail.com}{shanidsajjatuz@gmail.com} \textbar\,
-  \faPhone\ \href{tel:+8801970475003}{+880\,1970\,475003} \textbar\,
+  \faPhone\ \href{tel:+8801518964878}{+8801518964878} \textbar\,
   \faGithub\ \href{https://github.com/perashanid}{perashanid} \textbar\,
   \faLinkedin\ \href{https://www.linkedin.com/in/shanid-sajjatuz-islam}{Shanid Sajjatuz}
   }\\[8pt]
   % Personal site on new row
-  {\small \faGlobe\ \href{https://shanidsajjatuz.xyz}{Personal Site}}
+  {\small \faGlobe\ \href{shanidsajjatuz.is-a.dev}{Personal Site}}
 \end{center}
 
 \hrulefill
@@ -59,27 +61,30 @@
 %===============================================================================
 
 \cvsection{Objective}
-Aspiring MERN full‑stack developer and tech enthusiast from Bangladesh seeking an
-internship in software engineering.  I enjoy building scalable web
-applications and leveraging AI to deliver data‑driven insights.  Currently
-pursuing a Bachelor of Science in Computer Science at BRAC University and
-actively contributing to open‑source projects, student clubs and research.
+\small
+A  full-stack developer and tech enthusiast from Bangladesh, with a Bachelor of Science in Computer Science from BRAC University. Passionate about building scalable web applications and leveraging AI to deliver data-driven insights. Actively contributing to open-source projects, student clubs, and research, and now seeking an opportunity to further grow and apply my skills in software engineering. 
+
+\sectionspace
 
 %===============================================================================
 % Education
 %===============================================================================
 
 \cvsection{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}
-\textbf{2023–2027 (expected)} & \textbf{Bachelor of Science in Computer Science}, BRAC University, Dhaka, Bangladesh \\[-2pt]
-& Relevant coursework: Data Structures, Algorithms, Database Systems, Artificial Intelligence, Software Engineering.\\
+\begin{tabularx}{\linewidth}{@{}X r@{}}
+\textbf{Bachelor of Science in Computer Science} & \textbf{2021–2025 } \\
+BRAC University, Dhaka, Bangladesh & \\[-2pt]
+\multicolumn{2}{@{}l}{\small Relevant coursework: Data Structures, Algorithms, Database Systems, Artificial Intelligence, Software Engineering.} \\
 \end{tabularx}
+
+\sectionspace
 
 %===============================================================================
 % Technical Skills
 %===============================================================================
 
 \cvsection{Technical Skills}
+\small
 \textbf{Languages:} JavaScript (ES6+), TypeScript, Python, C++, basic Java\\
 \textbf{Frameworks:} React, Next.js, Tailwind CSS, Node.js/Express, Redux, React Router, Socket.IO\\
 \textbf{Databases:} MongoDB/Mongoose, PostgreSQL, MySQL, SQL, Supabase\\
@@ -87,56 +92,69 @@ actively contributing to open‑source projects, student clubs and research.
 \textbf{Tools:} Git/GitHub, Jira, Trello, Vite, npm/yarn, Docker, VS Code, Figma, psql\\
 \textbf{Other:} RESTful API design, authentication (JWT, Google OAuth), Mongoose ODM, Tailwind design systems, Agile development practices, documentation and technical writing
 
-\vspace{1em} % Increased space to avoid colliding with the next section
+\sectionspace
 
 %===============================================================================
 % Projects – Hero Projects from GitHub (Pinned)
 %===============================================================================
 
 \cvsection{Major Projects}
+\small
 \begin{itemize}
-  \item \textbf{SurvEase (survease\_v2)} — Built a full‑stack survey platform enabling users to design and distribute surveys via an intuitive drag‑and‑drop builder. Implemented real‑time analytics dashboards with data visualisation and Google Gemini–powered insights such as sentiment analysis and pattern detection. Features include question logic, quality control mechanisms, export options, an administrative portal and light/dark themes. Technologies: \textbf{\textcolor{darkblack}{React}}, \textbf{\textcolor{darkblack}{TypeScript}}, \textbf{\textcolor{darkblack}{Node.js/Express}}, \textbf{\textcolor{darkblack}{MongoDB}}.
+  \item \textbf{SurvEase } — Built a full‑stack survey platform enabling users to design and distribute surveys via an intuitive drag‑and‑drop builder. Implemented real‑time analytics dashboards with data visualisation and Google Gemini–powered insights such as sentiment analysis and pattern detection. Features include question logic, quality control mechanisms, export options, an administrative portal and light/dark themes. Technologies: \textbf{\textcolor{darkblack}{React}}, \textbf{\textcolor{darkblack}{TypeScript}}, \textbf{\textcolor{darkblack}{Node.js/Express}}, \textbf{\textcolor{darkblack}{MongoDB}}.
   \item \textbf{Camply} — Designed a campaign management platform for blood donation and fund‑raising events. Users can create campaigns, manage participants, upload media galleries and monitor goal progress through real‑time analytics. Integrated an AI writing assistant using Gemini to help organisers craft compelling campaign content and implemented secure authentication with JWT and Google OAuth. Front‑end built with \textbf{\textcolor{darkblack}{React}} and \textbf{\textcolor{darkblack}{Tailwind CSS}}; back‑end with \textbf{\textcolor{darkblack}{Node.js}}, \textbf{\textcolor{darkblack}{Express}} and \textbf{\textcolor{darkblack}{PostgreSQL}}.
   \item \textbf{BookVerse} — Developed a MERN web application for buying, selling, auctioning and trading books. Implemented fixed‑price listings, auctions and a unique trading system allowing users to propose exchanges. Included interactive chat for negotiations, offer system, AI‑driven book recommendations via Gemini and PDF sharing features.
   \item \textbf{Stoxly} — Created a stock trading platform focused on the Dhaka Stock Exchange. Provided real‑time stock quotes, interactive charts, portfolio management and buy/sell transactions with price alerts. Integrated AI modules to deliver personalised market insights and used a MERN stack with \textbf{\textcolor{darkblack}{TypeScript}}, \textbf{\textcolor{darkblack}{Node.js/Express}} and \textbf{\textcolor{darkblack}{MongoDB}}.
   \item \textbf{Yggdrasoft Labs Website} — Built a mythologically inspired landing page for Yggdrasoft Labs. The site features a responsive design with scroll‑triggered animations, dynamic content fetched from MongoDB and secure contact and newsletter forms. Ensured accessibility compliance (WCAG 2.1) and performance optimisation. Technologies: \textbf{\textcolor{darkblack}{React}}, \textbf{\textcolor{darkblack}{Node.js}}, \textbf{\textcolor{darkblack}{Express}}, \textbf{\textcolor{darkblack}{MongoDB}}.
 \end{itemize}
 
+\sectionspace
+
 %===============================================================================
 % Additional Projects
 %===============================================================================
 
 \cvsection{Additional Projects}
+\small
 \begin{itemize}
   \item \textbf{Modern Media Bias Detector}\;—\;Developed a production‑ready web application to detect and analyse media bias in news articles using advanced NLP and machine‑learning models. The system features a clean Material‑UI interface, intelligent web scraping, real‑time dashboards and secure authentication.  Tech stack includes a \textbf{\textcolor{darkblack}{Python/Flask}} backend, \textbf{\textcolor{darkblack}{React/TypeScript}} frontend and persistent storage via \textbf{\textcolor{darkblack}{MongoDB}}.
   \item \textbf{Real‑Time Chat Application}\;—\;Built a full‑stack chat platform enabling users to exchange messages in private and group channels with user authentication and presence indicators. Implemented using \textbf{\textcolor{darkblack}{React}}, \textbf{\textcolor{darkblack}{Node.js/Express}}, \textbf{\textcolor{darkblack}{Socket.IO}} and \textbf{\textcolor{darkblack}{MongoDB}} (project details provided by user; repository not publicly accessible).
   \item \textbf{Business \& Economy Dashboard}\;—\;Created an interactive web dashboard for exploring economic indicators and business metrics across industries. Included data filtering, charts and analytics with a tech stack of \textbf{\textcolor{darkblack}{React}}, \textbf{\textcolor{darkblack}{Node.js/Express}} and \textbf{\textcolor{darkblack}{PostgreSQL}} (project details provided by user; repository not publicly accessible).
 \end{itemize}
 
+\sectionspace
+
 %===============================================================================
 % Club Websites and Contributions
 %===============================================================================
 
 \cvsection{Club Projects and Contributions}
+\small
 \begin{itemize}
   \item \textbf{BRAC University Computer Club (BUCC) Web Portal}\;—\;Contributed to the development of BUCC’s official web portal, a comprehensive platform that streamlines member registration, event management and internal communication. My role involved designing responsive registration and event pages, implementing secure user authentication, and building administrative dashboards for managing workshops and announcements.  I also helped write onboarding documentation and maintain code quality as part of the R\&D department.
   \item \textbf{BRAC University Business Club (Biz Bee) Recruitment Platform}\;—\;Developed and maintained the Business Club’s recruitment platform (Biz Bee) to simplify membership and event workflows. I implemented digital application forms, automated candidate short‑listing pipelines and event registration modules, ensuring data was validated and securely stored. The site features dedicated departmental pages for marketing, finance and human resources, along with dashboards that allow administrators to track applicants and monitor event metrics. Focused on responsive design and secure back‑end logic to deliver a professional experience for prospective members.
 \end{itemize}
+
+\sectionspace
 
 %===============================================================================
 % Research
 %===============================================================================
 
 \cvsection{Research Experience}
+\small
 \textbf{Media Bias Detection using Machine Learning and Deep Learning}\;—\;Designed and implemented a research project to detect media bias in news articles using Natural Language Processing. Applied CNNs and RNNs to identify sentiment and ideological alignment within text. Utilised techniques such as sentiment analysis, topic modelling and automated classification to evaluate biases. Presented findings to peers and mentors.
+
+\sectionspace
 
 %===============================================================================
 % Leadership & Extracurricular Activities
 %===============================================================================
 
 \cvsection{Leadership \& Extracurricular}
+\small
 \begin{itemize}
-  \item \textbf{General Member, BRAC University Computer Club (R\&D Department)}\;—\;Collaborated with peers to explore emerging technologies and contribute to research and development projects. Participated in technical workshops and hackathons, refining leadership and communication skills.
+  \item \textbf{Excecutive, BRAC University Computer Club (R\&D Department)}\;—\;Collaborated with peers to explore emerging technologies and contribute to research and development projects. Participated in technical workshops and hackathons, refining leadership and communication skills.
   \item \textbf{Hackathons and Competitions}\;—\;Actively participate in coding challenges and university hackathons, often assuming team lead or full‑stack developer roles. Recognised for creative problem solving and effective project demos.
 \end{itemize}
 
